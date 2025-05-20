@@ -1,0 +1,19 @@
+Tablas disponibles:
+
+clientes(id, nombre, email, fecha_registro)
+productos(id, nombre, precio, categoria_id)
+categorias(id, nombre)
+ordenes(id, cliente_id, producto_id, cantidad, fecha_orden, sucursal_id)
+pagos(id, orden_id, monto, metodo, fecha_pago)
+envios(id, orden_id, fecha_envio, estado, direccion)
+empleados(id, nombre, cargo, sucursal_id, fecha_contratacion)
+sucursales(id, nombre, ciudad)
+
+Relaciones:
+ordenes.cliente_id       referencia a clientes.id
+ordenes.producto_id      referencia a productos.id
+ordenes.sucursal_id      referencia a sucursales.id
+productos.categoria_id   referencia a categorias.id
+pagos.orden_id           referencia a ordenes.id
+envios.orden_id          referencia a ordenes.id
+empleados.sucursal_id    referencia a sucursales.id
