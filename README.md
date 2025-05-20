@@ -1,4 +1,4 @@
-### Desarrollo de tesisi
+### Desarrollo de tesis
 Como parte central del proyecto, se implementó una interfaz interactiva utilizando **Streamlit**, que permite a los usuarios realizar preguntas en lenguaje natural y visualizar los resultados en tiempo real mediante un **asistente NL2SQL**.
 
 ### 🔧 Funcionalidad general
